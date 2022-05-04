@@ -1,0 +1,40 @@
+.container {
+  display: grid;
+  grid-template-columns: 0.8fr 1.6fr 0.8fr;
+  grid-template-rows: 0.5fr 0.5fr 2fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "top_nav top_nav top_nav"
+    "left_nav title biopic"
+    "left_nav main_content abt_me"
+    "footer footer footer";
+}
+
+.top_nav {
+  grid-area: top_nav;
+}
+
+.title {
+  grid-area: title;
+}
+
+.main_content {
+  grid-area: main_content;
+}
+
+.left_nav {
+  grid-area: left_nav;
+}
+
+.biopic {
+  grid-area: biopic;
+}
+
+.abt_me {
+  grid-area: abt_me;
+}
+
+.footer {
+  grid-area: footer;
+}
